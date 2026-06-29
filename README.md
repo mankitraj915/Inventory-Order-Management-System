@@ -6,7 +6,7 @@ A fully containerized, high-performance web application designed for elite scala
 ## Live Deployments
 * [Insert Vercel Link Here]
 * [Insert Render API Docs Link Here]
-* [Insert Docker Hub Link Here]
+* [docker.io/mankitraj915/ethara-backend]
 
 ## System Architecture & Concurrency
 The system is engineered to handle massive concurrent load gracefully. Deep within the transaction pipelines, it utilizes PostgreSQL `SELECT ... FOR UPDATE` row-level locks. This pessimistic locking strategy mathematically prevents race conditions, explicitly guaranteeing that inventory cannot be oversold even when thousands of concurrent transactions attempt to reserve the same SKU simultaneously.
